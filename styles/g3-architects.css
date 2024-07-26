@@ -1,6 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+/* Shared Styles */
+.display-flex {
+  display: flex;
+}
+
+.text-dark-1 {
+  color: #131313;
+}
+
+.text-dark-2 {
+  color: #424242;
+}
+
+.text-dark-3 {
+  color: #727272;
+}
+
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* Header Styles */
+/* Navbar related styles */
+.navbar {
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  gap: 50px;
+  align-items: center;
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
 }
