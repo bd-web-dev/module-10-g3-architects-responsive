@@ -32,21 +32,41 @@
   background-color: rgba(255, 144, 14, 0.1);
 }
 
+.btn-primary {
+  color: #ffffff;
+  background-color: #ff900e;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
 /* Header Styles */
 /* Navbar related styles */
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .navbar {
   justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  margin-bottom: 100px;
 }
 
 .navbar-brand {
   font-weight: 700;
-  font-size: 45px;
+  /* Changed 45px to equivalent rem considering standard size=16px */
+  font-size: 2.8125rem;
 }
 
 .navbar-menu {
   list-style-type: none;
   gap: 50px;
-  align-items: center;
 }
 
 .navbar-link {
@@ -55,8 +75,32 @@
   font-size: 18px;
 }
 
-.navbar,
-.banner {
-  max-width: 1440px;
+.banner-info {
+  max-width: 861px;
   margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.banner-title {
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 25px;
+}
+
+.banner-desc {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-bottom: 32px;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar,
+  .navbar-menu {
+    flex-direction: column;
+  }
 }
