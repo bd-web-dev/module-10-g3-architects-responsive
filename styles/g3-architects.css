@@ -28,6 +28,10 @@
   color: #727272;
 }
 
+.text-orange {
+  color: #ff900e;
+}
+
 .bg-light {
   background-color: rgba(255, 144, 14, 0.1);
 }
@@ -41,6 +45,15 @@
   font-family: inherit;
   font-weight: 600;
   font-size: 1.25rem;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main > section {
+  margin-top: 130px;
 }
 
 /* Header Styles */
@@ -96,6 +109,30 @@
 
 .banner-image {
   width: 100%;
+}
+
+.teams {
+  align-items: center;
+  gap: 75px;
+}
+
+.teams-image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.team-features {
+  max-width: 537px;
+}
+
+.feature-title {
+  font-size: 2.8125rem;
+  font-weight: 700;
+}
+
+#title-part-1 {
+  font-weight: 500;
 }
 
 @media screen and (max-width: 576px) {
