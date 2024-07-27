@@ -126,18 +126,55 @@ main > section {
   max-width: 537px;
 }
 
-.feature-title {
+.section-title {
   font-size: 2.8125rem;
   font-weight: 700;
+  margin-bottom: 24px;
 }
 
 #title-part-1 {
   font-weight: 500;
 }
 
+.section-desc {
+  line-height: 1.625rem;
+  margin-bottom: 32px;
+}
+
 @media screen and (max-width: 576px) {
   .navbar,
-  .navbar-menu {
+  .navbar-menu,
+  .teams {
     flex-direction: column;
+  }
+
+  .teams {
+    gap: 0px;
+  }
+
+  .teams-image-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .teams-features {
+    margin: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .navbar,
+  .teams {
+    flex-direction: column;
+  }
+
+  .teams {
+    gap: 0px;
+  }
+
+  .grid-image {
+    width: 100%;
+  }
+
+  .teams-features {
+    margin: 50px;
   }
 }
