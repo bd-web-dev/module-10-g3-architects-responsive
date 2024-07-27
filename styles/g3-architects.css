@@ -137,8 +137,42 @@ main > section {
 }
 
 .section-desc {
+  max-width: 540px;
   line-height: 1.625rem;
   margin-bottom: 32px;
+}
+
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.fact-card {
+  /* padding: 45px 36px 60px 36px;
+  text-align: center; */
+  /* Considered equal padding on both sides. Implemented with flex to center content horizontally and vertically */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  width: 240px;
+  height: 240px;
+}
+
+.fact-icon {
+  margin-bottom: 10px;
+}
+
+.fact-number {
+  font-weight: 600;
+  font-size: 2.8125rem;
+  margin-bottom: 5px;
+}
+
+.fact-name {
+  font-weight: 600;
+  font-size: 1.25rem;
 }
 
 @media screen and (max-width: 576px) {
